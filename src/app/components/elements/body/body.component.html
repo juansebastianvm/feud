@@ -1,0 +1,98 @@
+<nav class="navbar  navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home">Menú</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentJS" aria-controls="navbarSupportedContentJS" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContentJS">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Calculadora
+          </a>      
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item">            
+              <div class="d-grid gap-2">
+                <button type="menu" class="btn" (click)="mostrar('Suma')">Suma</button>
+              </div>
+            </li>        
+            <li class="nav-item">
+              <div class="d-grid gap-2">             
+                <button type="menu" class="btn" (click)="mostrar('Resta')">Resta</button>
+              </div> 
+            </li>
+            <li class="nav-item">
+              <div class="d-grid gap-2">                
+                <button type="menu" class="btn" (click)="mostrar('División')">División</button>
+              </div> 
+            </li>
+            <li class="nav-item">
+              <div class="d-grid gap-2"> 
+                <button type="menu" class="btn" (click)="mostrar('Multiplicación')">Multiplicación</button>
+              </div> 
+            </li>
+            <li class="nav-item">
+              <div class="d-grid gap-2"> 
+                <button type="menu" class="btn" (click)="mostrar('Factorial')">Factorial</button>
+              </div> 
+            </li>
+            <li class="nav-item">
+              <div class="d-grid gap-2"> 
+                <button type="menu" class="btn" (click)="mostrar('Primos')">Primos</button>
+              </div> 
+            </li>  
+            <li class="nav-item">
+              <div class="d-grid gap-2"> 
+                <button type="menu" class="btn" (click)="mostrar('Todas')">Todas</button>
+              </div> 
+            </li>                                                              
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="row">
+    <div *ngIf="mostrarS" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-suma></app-suma>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarR" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-resta></app-resta>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarD" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-division></app-division>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarM" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-multiplicacion></app-multiplicacion>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarF" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-factorial></app-factorial>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="mostrarP" class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-primos></app-primos>
+        </div>
+      </div>
+    </div>    
+  </div>

@@ -1,0 +1,30 @@
+<div class="container">
+
+    <div style="text-align:center">
+      <h1>Multiplicación</h1>
+    </div>
+
+    <hr>    
+
+    <form>
+        
+        <div class="mb-3">
+            <label for="disabledTextInput" class="form-label">Primer Número</label>
+            <input type="number" class="form-control" id="NumberA" name="NumberA" placeholder="0" aria-label="NumberA" [(ngModel)]="NumberA">
+
+            <label for="disabledTextInput" class="form-label">Segundo Número</label>
+            <input type="number" class="form-control" id="NumberB" name="NumberB" placeholder="0" aria-label="NumberB" [(ngModel)]="NumberB">
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-outline-primary"  (click)="multiplicar()">Calcular</button>
+        </div>        
+
+    </form>
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Resultado</label>
+        <input class="form-control" type="number" value="{{ Resultado }}" aria-label="Resultado" placeholder="{{ Resultado }}" disabled readonly>
+    </div>
+
+</div>    
