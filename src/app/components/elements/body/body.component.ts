@@ -115,6 +115,24 @@ export class BodyComponent implements OnInit {
     } 
   }
 
+  cambiarEstilo() {
+
+    this.variasO=0;
+    this.mostrarS = false;
+    this.mostrarR = false;
+    this.mostrarD = false;
+    this.mostrarM = false;
+    this.mostrarP = false;
+    this.mostrarF = false;
+    this.mostrarT = false; 
+    
+    if (this.dataService.estilo) {
+      this.dataService.estilo = false;
+    } else {
+      this.dataService.estilo = true;
+    }
+  }
+
   constructor( private dataService: DataService ) { }
 
   ngOnInit(): void {

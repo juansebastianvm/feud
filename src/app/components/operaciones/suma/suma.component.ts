@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-suma',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./suma.component.css']
 })
 export class SumaComponent implements OnInit {
+
+  estiloSuma:boolean = this.dataService.estilo;
 
   NumberA:number = 0;
   NumberB:number = 0;
@@ -15,7 +18,7 @@ export class SumaComponent implements OnInit {
     this.Resultado = (this.NumberA + this.NumberB);
   }
 
-  constructor() { }
+  constructor( private dataService: DataService ) { }
 
   ngOnInit(): void {
   }

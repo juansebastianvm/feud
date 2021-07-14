@@ -18,7 +18,11 @@
 
         <div class="d-grid gap-2 col-6 mx-auto">
             <button type="submit" class="btn btn-outline-primary"  (click)="sumar()">Calcular</button>
-        </div>        
+        </div>  
+        
+        <p [ngClass]="{'rojo': estiloSuma, azul: !estiloSuma}">
+            Texto Estilo
+        </p>
 
     </form>
 

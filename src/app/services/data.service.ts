@@ -7,5 +7,7 @@ export class DataService {
 
   operacion: string = 'Ninguna';
 
+  estilo: boolean = true;
+
   constructor() { }
 }

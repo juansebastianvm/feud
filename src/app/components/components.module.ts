@@ -10,6 +10,7 @@ import { MultiplicacionComponent } from './operaciones/multiplicacion/multiplica
 import { PrimosComponent } from './operaciones/primos/primos.component';
 import { RestaComponent } from './operaciones/resta/resta.component';
 import { SumaComponent } from './operaciones/suma/suma.component';
+import { AppHighLightDirective } from '../directives/app-high-light.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SumaComponent } from './operaciones/suma/suma.component';
     SumaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppHighLightDirective
   ],
   exports: [
     BodyComponent,
