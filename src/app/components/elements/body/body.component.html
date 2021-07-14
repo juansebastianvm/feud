@@ -96,3 +96,13 @@
       </div>
     </div>    
   </div>
+
+  <p appAppHighLight>Hola</p>
+
+<p [ngClass]="{'rojo': estilo, azul: !estilo}">
+  Blablabla
+</p>
+
+  <div class="d-grid gap-2"> 
+    <button type="menu" class="btn" (click)="estilo=!estilo">Todas</button>
+  </div> 

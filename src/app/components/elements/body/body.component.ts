@@ -8,6 +8,8 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class BodyComponent implements OnInit {
 
+  estilo:boolean = true;
+
   mostrarS:boolean = false;
   mostrarR:boolean = false;
   mostrarD:boolean = false;

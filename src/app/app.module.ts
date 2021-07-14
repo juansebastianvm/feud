@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/elements/header/header.component';
 import { FooterComponent } from './components/elements/footer/footer.component';
 import { BodyComponent } from './components/elements/body/body.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AppHighLightDirective } from './directives/app-high-light.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     FooterComponent,
     BodyComponent,
-    HomeComponent
+    HomeComponent,
+    AppHighLightDirective
   ],
   imports: [
     BrowserModule,
